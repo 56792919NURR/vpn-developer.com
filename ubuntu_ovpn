@@ -830,7 +830,7 @@ if [[ $(lsb_release -rs) == "18"* ]] || [[ $(lsb_release -rs) == "20"* ]]; then
 	mkdir -p /etc/openvpn/server/
 /bin/cat <<"EOM" >/etc/systemd/resolved.conf
 [Resolve]
-DNS=1.1.1.1
+DNS=8.8.8.8
 #FallbackDNS=
 #Domains=
 #LLMNR=no
