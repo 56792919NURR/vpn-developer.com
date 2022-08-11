@@ -1,9 +1,0 @@
-#!/bin/bash
-#Script Variables
-HOST='50.116.18.242';
-USER='loveyoun_developer';
-PASS='@@@developer';
-DBNAME='loveyoun_developer';
-PORT_TCP='22';
-PORT_UDP='None';
-test UBUNTU_SSH_WS
