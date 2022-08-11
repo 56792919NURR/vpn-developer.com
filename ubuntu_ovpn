@@ -719,6 +719,7 @@ install_openvpn() {
 if [[ $(lsb_release -rs) == "18"* ]] || [[ $(lsb_release -rs) == "20"* ]]; then
 	sudo DEBIAN_FRONTEND=noninteractive apt-get install openvpn easy-rsa -y
 	mkdir -p /etc/openvpn/server/
+	
 	if nc -z localhost 53; then
 		/bin/cat <<"EOM" >/etc/systemd/resolved.conf
 		[Resolve]
@@ -734,6 +735,9 @@ if [[ $(lsb_release -rs) == "18"* ]] || [[ $(lsb_release -rs) == "20"* ]]; then
 		#ReadEtcHosts=yes
 		EOM
 		sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+		
+	else
+	
 	fi
 
 else
