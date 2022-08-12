@@ -821,32 +821,18 @@ sed -i "s|DBNAME|$DBNAME|g" /etc/openvpn/server/auth_vpn
 
 cat << EOF > /etc/openvpn/server/ca.crt
 -----BEGIN CERTIFICATE-----
-MIIEszCCA5ugAwIBAgIJAIADOyhN+RJ9MA0GCSqGSIb3DQEBCwUAMIGXMQswCQYD
-VQQGEwJQSDENMAsGA1UECBMEQ0VCVTENMAsGA1UEBxMEQ0VCVTENMAsGA1UEChME
-Q2VidTEWMBQGA1UECxMNU3Ryb25nVlBOVGVhbTEQMA4GA1UEAxMHQ2VidSBDQTEP
-MA0GA1UEKRMGc2VydmVyMSAwHgYJKoZIhvcNAQkBFhFkZXZAc3Ryb25nLXZwbi50
-azAeFw0xODAzMTAxMTUxNTJaFw0yODAzMDcxMTUxNTJaMIGXMQswCQYDVQQGEwJQ
-SDENMAsGA1UECBMEQ0VCVTENMAsGA1UEBxMEQ0VCVTENMAsGA1UEChMEQ2VidTEW
-MBQGA1UECxMNU3Ryb25nVlBOVGVhbTEQMA4GA1UEAxMHQ2VidSBDQTEPMA0GA1UE
-KRMGc2VydmVyMSAwHgYJKoZIhvcNAQkBFhFkZXZAc3Ryb25nLXZwbi50azCCASIw
-DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKtZLyRX4YLUzesvxqBjd/54ntTR
-h8v4nPuwatRZogcO9u75asHnUjuEu36ZJAN7mfeaxFRfua78YislDL2WnDnXvrsp
-XmZdcyVtxpu2P/kA9WPqBq4PsVY9sr5hViM8dsED98h3Eux3V5qFZFnJMuKYFHLC
-yRa4SYt26G06ZH0fEVQTM1wZGOZPUZw7QxbziN23oJerDYDCmJdNb18QVGn19ZEz
-FaT7lvAt8YTrzJLB6IviAWVIhIulpPG1SqeN6VGMWyRHfZN34AmvxaP4ecj+gJp/
-7eKHztInRsuEY6dC5l7b67OKMHMu1JLmxItKaavBBwf0nkl+moTlDkvOuAMCAwEA
-AaOB/zCB/DAdBgNVHQ4EFgQUDKmuS4YYv4ctZYUtjsRJ4ih18AAwgcwGA1UdIwSB
-xDCBwYAUDKmuS4YYv4ctZYUtjsRJ4ih18AChgZ2kgZowgZcxCzAJBgNVBAYTAlBI
-MQ0wCwYDVQQIEwRDRUJVMQ0wCwYDVQQHEwRDRUJVMQ0wCwYDVQQKEwRDZWJ1MRYw
-FAYDVQQLEw1TdHJvbmdWUE5UZWFtMRAwDgYDVQQDEwdDZWJ1IENBMQ8wDQYDVQQp
-EwZzZXJ2ZXIxIDAeBgkqhkiG9w0BCQEWEWRldkBzdHJvbmctdnBuLnRrggkAgAM7
-KE35En0wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAeOVmZmtBIExL
-MTqPu5vuMsMq+upc2IRCfZWfKjK/ivA+AEq/PlyHmhyXIIi3PjGL8c78yHPyZO1j
-bbBxOvWHdaYZcQI30OtcQGnVhZKVpQZWmd8FD/cogWbZiXppiEAsdhKlK/rnx/cg
-/hcLPKdVf27pnRMWnTgL5gMSGdkLHhz9a4JWNVz+DV3UUw2Yd+3XksUz4IsjvSbG
-Vb43A4OPQ0SyyVjJA4Y3A+fwqYNC9ePy9vLpo8cQgCempOlewJdDWcs52Wy4PJA0
-sWnPvjILngzAF0v7GHaEx1le5kVG23Tj//kd+2r9fep/3jaHcX33Pw7IQqA4whno
-hvTfcLZnUA==
+MIICMTCCAZqgAwIBAgIUAaQBApMS2dYBqYPcA3Pa7cjjw7cwDQYJKoZIhvcNAQEL
+BQAwDzENMAsGA1UEAwwES29iWjAeFw0yMDA3MjIyMjIzMzNaFw0zMDA3MjAyMjIz
+MzNaMA8xDTALBgNVBAMMBEtvYlowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGB
+AMF46UVi2O5pZpddOPyzU2EyIrr8NrpXqs8BlYhUjxOcCrkMjFu2G9hk7QIZ4qO0
+GWVZpPhYk5qWk+LxCsryrSoe0a5HaqIye8BFJmXV0k+O/3e6k06UGNii3gxBWQpF
+7r/2CyQLus9OSpQPYszByBvtkwiBAo/V98jdpm+EVu6tAgMBAAGjgYkwgYYwHQYD
+VR0OBBYEFGRJMm/+ZmLxV027kahdvSY+UaTSMEoGA1UdIwRDMEGAFGRJMm/+ZmLx
+V027kahdvSY+UaTSoROkETAPMQ0wCwYDVQQDDARLb2JaghQBpAECkxLZ1gGpg9wD
+c9rtyOPDtzAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsF
+AAOBgQC0f8wb5hyEOEEX64l8QCNpyd/WLjoeE5bE+xnIcKE+XpEoDRZwugLoyQdc
+HKa3aRHNqKpR7H696XJReo4+pocDeyj7rATbO5dZmSMNmMzbsjQeXux0XjwmZIHu
+eDKMefDi0ZfiZmnU2njmTncyZKxv18Ikjws0Myc8PtAxy2qdcA==
 -----END CERTIFICATE-----
 EOF
 
@@ -854,49 +840,37 @@ cat << EOF > /etc/openvpn/server/server.crt
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number: 1 (0x1)
-    Signature Algorithm: sha256WithRSAEncryption
-        Issuer: C=PH, ST=CEBU, L=CEBU, O=Cebu, OU=StrongVPNTeam, CN=Cebu CA/name=server/emailAddress=dev@strong-vpn.tk
+        Serial Number:
+            40:26:da:91:18:2b:77:9c:85:6a:0c:bb:ca:90:53:fe
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=KobZ
         Validity
-            Not Before: Mar 10 11:52:08 2018 GMT
-            Not After : Mar  7 11:52:08 2028 GMT
-        Subject: C=PH, ST=CEBU, L=CEBU, O=Cebu, OU=StrongVPNTeam, CN=server/name=server/emailAddress=dev@strong-vpn.tk
+            Not Before: Jul 22 22:23:55 2020 GMT
+            Not After : Jul 20 22:23:55 2030 GMT
+        Subject: CN=server
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (1024 bit)
                 Modulus:
-                    00:c6:b0:14:c0:61:d9:f5:39:96:cd:eb:ec:b0:0c:
-                    cd:d8:f6:83:ce:ea:92:8d:74:41:00:e3:2b:b4:7e:
-                    3d:ed:d6:fe:05:78:55:1f:8f:04:82:10:34:77:7b:
-                    5c:7e:f8:76:18:3a:ac:8e:6b:57:58:20:f9:78:7c:
-                    83:48:bb:ca:c3:7f:a1:97:51:db:08:70:18:1f:68:
-                    27:ff:ed:e6:47:29:ea:b8:97:0e:aa:7d:ad:e2:b6:
-                    42:5f:8a:4d:da:6c:bb:3b:61:db:71:72:1d:99:3e:
-                    23:38:b1:1c:68:de:7a:19:10:87:60:f4:1b:18:ce:
-                    56:5f:37:6c:4b:94:fa:13:2a:64:60:9c:77:2c:2f:
-                    42:36:4c:9f:9f:a7:40:9e:e7:d3:41:98:a2:d9:9f:
-                    d0:a6:32:53:2c:52:d3:2b:53:5c:6c:72:10:17:fe:
-                    c9:1f:25:af:a8:fb:10:45:d6:cd:83:f4:d0:4c:22:
-                    e4:5a:a4:be:c8:69:76:99:2b:7f:ed:9c:fd:32:20:
-                    33:eb:87:2e:bf:4b:f2:d6:f8:12:36:69:d0:3e:c6:
-                    43:8f:53:ef:ca:ff:e5:66:96:49:9f:a5:76:4b:6c:
-                    d2:4d:44:23:cd:2d:58:09:12:16:43:38:e7:64:9d:
-                    04:1f:03:c3:bb:88:5a:7d:6c:93:93:a0:34:c2:d0:
-                    09:01
+                    00:ce:35:23:d8:5d:9f:b6:9b:cb:6a:89:e1:90:af:
+                    42:df:5f:f8:bd:ad:a7:78:9a:ca:20:f0:3d:5b:d6:
+                    c9:ef:4c:4a:99:96:c3:38:fd:59:b4:d7:65:ed:d4:
+                    a7:fa:ab:03:e2:be:88:2f:ca:fc:90:dd:b0:b7:bc:
+                    23:cb:83:ac:36:e2:01:57:69:64:b8:e1:9e:51:f0:
+                    a6:9d:13:d9:92:6b:4d:04:a6:10:64:a3:3f:6b:ff:
+                    fe:32:ac:91:63:c2:71:24:be:9e:76:4f:87:cc:3a:
+                    03:a1:9e:48:3f:11:92:33:3b:19:16:9c:d0:5d:16:
+                    ee:c1:42:67:99:47:66:67:67
                 Exponent: 65537 (0x10001)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:FALSE
-            Netscape Cert Type: 
-                SSL Server
-            Netscape Comment: 
-                Easy-RSA Generated Server Certificate
             X509v3 Subject Key Identifier: 
-                D5:65:59:B0:2D:94:B0:9B:A9:F5:69:42:6A:52:4F:80:BA:2E:31:9A
+                6B:08:C0:64:10:71:A8:32:7F:0B:FE:1E:98:1F:BD:72:74:0F:C8:66
             X509v3 Authority Key Identifier: 
-                keyid:0C:A9:AE:4B:86:18:BF:87:2D:65:85:2D:8E:C4:49:E2:28:75:F0:00
-                DirName:/C=PH/ST=CEBU/L=CEBU/O=Cebu/OU=StrongVPNTeam/CN=Cebu CA/name=server/emailAddress=dev@strong-vpn.tk
-                serial:80:03:3B:28:4D:F9:12:7D
+                keyid:64:49:32:6F:FE:66:62:F1:57:4D:BB:91:A8:5D:BD:26:3E:51:A4:D2
+                DirName:/CN=KobZ
+                serial:01:A4:01:02:93:12:D9:D6:01:A9:83:DC:03:73:DA:ED:C8:E3:C3:B7
 
             X509v3 Extended Key Usage: 
                 TLS Web Server Authentication
@@ -905,81 +879,47 @@ Certificate:
             X509v3 Subject Alternative Name: 
                 DNS:server
     Signature Algorithm: sha256WithRSAEncryption
-         a2:e6:8d:7a:22:1a:c9:f8:6e:3e:1a:27:04:46:6c:40:b3:f7:
-         29:50:fd:64:55:01:45:15:a3:15:e7:ef:fc:8e:72:a4:09:f8:
-         85:dc:c1:6a:63:3f:d3:16:e6:05:25:02:61:f7:a1:fe:fd:02:
-         5c:39:32:ab:d1:12:e4:22:c5:59:d5:48:a5:ff:3a:ff:5f:de:
-         9a:8c:52:2d:77:5d:e9:ae:00:59:97:c2:31:a7:cf:eb:c6:4b:
-         71:6f:08:e2:b2:84:2c:6c:df:2b:17:6c:12:0b:3e:72:33:5e:
-         f2:48:1d:a9:ed:da:80:72:ff:e8:52:5c:25:d8:12:2b:5b:70:
-         25:1d:cb:c0:e6:d8:2e:eb:83:84:bf:38:43:bd:3a:4f:39:d0:
-         d5:50:dd:55:ad:87:91:36:6c:4b:42:bf:82:6a:f8:a6:d5:34:
-         63:ff:05:bc:47:aa:c5:8d:40:50:1f:db:6a:5e:e1:4f:60:1b:
-         f1:b5:6b:e2:a3:db:80:d2:8f:17:64:db:81:70:73:e9:4f:86:
-         6c:9e:d7:35:d8:31:df:ca:e6:82:36:18:00:47:05:6d:49:50:
-         85:fe:03:cf:62:93:e2:53:c2:ad:29:d3:0b:8c:fc:aa:ac:6e:
-         2e:ef:0c:43:4d:fb:dc:94:5b:0b:16:9d:2a:fe:ad:a9:18:35:
-         39:54:ca:2e
+         a1:3e:ac:83:0b:e5:5d:ca:36:b7:d0:ab:d0:d9:73:66:d1:62:
+         88:ce:3d:47:9e:08:0b:a0:5b:51:13:fc:7e:d7:6e:17:0e:bd:
+         f5:d9:a9:d9:06:78:52:88:5a:e5:df:d3:32:22:4a:4b:08:6f:
+         b1:22:80:4f:19:d1:5f:9d:b6:5a:17:f7:ad:70:a9:04:00:ff:
+         fe:84:aa:e1:cb:0e:74:c0:1a:75:0b:3e:98:90:1d:22:ba:a4:
+         7a:26:65:7d:d1:3b:5c:45:a1:77:22:ed:b6:6b:18:a3:c4:ee:
+         3e:06:bb:0b:ec:12:ac:16:a5:50:b3:ed:46:43:87:72:fd:75:
+         8c:38
 -----BEGIN CERTIFICATE-----
-MIIFJzCCBA+gAwIBAgIBATANBgkqhkiG9w0BAQsFADCBlzELMAkGA1UEBhMCUEgx
-DTALBgNVBAgTBENFQlUxDTALBgNVBAcTBENFQlUxDTALBgNVBAoTBENlYnUxFjAU
-BgNVBAsTDVN0cm9uZ1ZQTlRlYW0xEDAOBgNVBAMTB0NlYnUgQ0ExDzANBgNVBCkT
-BnNlcnZlcjEgMB4GCSqGSIb3DQEJARYRZGV2QHN0cm9uZy12cG4udGswHhcNMTgw
-MzEwMTE1MjA4WhcNMjgwMzA3MTE1MjA4WjCBljELMAkGA1UEBhMCUEgxDTALBgNV
-BAgTBENFQlUxDTALBgNVBAcTBENFQlUxDTALBgNVBAoTBENlYnUxFjAUBgNVBAsT
-DVN0cm9uZ1ZQTlRlYW0xDzANBgNVBAMTBnNlcnZlcjEPMA0GA1UEKRMGc2VydmVy
-MSAwHgYJKoZIhvcNAQkBFhFkZXZAc3Ryb25nLXZwbi50azCCASIwDQYJKoZIhvcN
-AQEBBQADggEPADCCAQoCggEBAMawFMBh2fU5ls3r7LAMzdj2g87qko10QQDjK7R+
-Pe3W/gV4VR+PBIIQNHd7XH74dhg6rI5rV1gg+Xh8g0i7ysN/oZdR2whwGB9oJ//t
-5kcp6riXDqp9reK2Ql+KTdpsuzth23FyHZk+IzixHGjeehkQh2D0GxjOVl83bEuU
-+hMqZGCcdywvQjZMn5+nQJ7n00GYotmf0KYyUyxS0ytTXGxyEBf+yR8lr6j7EEXW
-zYP00Ewi5Fqkvshpdpkrf+2c/TIgM+uHLr9L8tb4EjZp0D7GQ49T78r/5WaWSZ+l
-dkts0k1EI80tWAkSFkM452SdBB8Dw7uIWn1sk5OgNMLQCQECAwEAAaOCAXswggF3
-MAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDQGCWCGSAGG+EIBDQQnFiVF
-YXN5LVJTQSBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMB0GA1UdDgQWBBTV
-ZVmwLZSwm6n1aUJqUk+Aui4xmjCBzAYDVR0jBIHEMIHBgBQMqa5Lhhi/hy1lhS2O
-xEniKHXwAKGBnaSBmjCBlzELMAkGA1UEBhMCUEgxDTALBgNVBAgTBENFQlUxDTAL
-BgNVBAcTBENFQlUxDTALBgNVBAoTBENlYnUxFjAUBgNVBAsTDVN0cm9uZ1ZQTlRl
-YW0xEDAOBgNVBAMTB0NlYnUgQ0ExDzANBgNVBCkTBnNlcnZlcjEgMB4GCSqGSIb3
-DQEJARYRZGV2QHN0cm9uZy12cG4udGuCCQCAAzsoTfkSfTATBgNVHSUEDDAKBggr
-BgEFBQcDATALBgNVHQ8EBAMCBaAwEQYDVR0RBAowCIIGc2VydmVyMA0GCSqGSIb3
-DQEBCwUAA4IBAQCi5o16IhrJ+G4+GicERmxAs/cpUP1kVQFFFaMV5+/8jnKkCfiF
-3MFqYz/TFuYFJQJh96H+/QJcOTKr0RLkIsVZ1Uil/zr/X96ajFItd13prgBZl8Ix
-p8/rxktxbwjisoQsbN8rF2wSCz5yM17ySB2p7dqAcv/oUlwl2BIrW3AlHcvA5tgu
-64OEvzhDvTpPOdDVUN1VrYeRNmxLQr+Cavim1TRj/wW8R6rFjUBQH9tqXuFPYBvx
-tWvio9uA0o8XZNuBcHPpT4Zsntc12DHfyuaCNhgARwVtSVCF/gPPYpPiU8KtKdML
-jPyqrG4u7wxDTfvclFsLFp0q/q2pGDU5VMou
+MIICVDCCAb2gAwIBAgIQQCbakRgrd5yFagy7ypBT/jANBgkqhkiG9w0BAQsFADAP
+MQ0wCwYDVQQDDARLb2JaMB4XDTIwMDcyMjIyMjM1NVoXDTMwMDcyMDIyMjM1NVow
+ETEPMA0GA1UEAwwGc2VydmVyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO
+NSPYXZ+2m8tqieGQr0LfX/i9rad4msog8D1b1snvTEqZlsM4/Vm012Xt1Kf6qwPi
+vogvyvyQ3bC3vCPLg6w24gFXaWS44Z5R8KadE9mSa00EphBkoz9r//4yrJFjwnEk
+vp52T4fMOgOhnkg/EZIzOxkWnNBdFu7BQmeZR2ZnZwIDAQABo4GuMIGrMAkGA1Ud
+EwQCMAAwHQYDVR0OBBYEFGsIwGQQcagyfwv+HpgfvXJ0D8hmMEoGA1UdIwRDMEGA
+FGRJMm/+ZmLxV027kahdvSY+UaTSoROkETAPMQ0wCwYDVQQDDARLb2JaghQBpAEC
+kxLZ1gGpg9wDc9rtyOPDtzATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMC
+BaAwEQYDVR0RBAowCIIGc2VydmVyMA0GCSqGSIb3DQEBCwUAA4GBAKE+rIML5V3K
+NrfQq9DZc2bRYojOPUeeCAugW1ET/H7XbhcOvfXZqdkGeFKIWuXf0zIiSksIb7Ei
+gE8Z0V+dtloX961wqQQA//6EquHLDnTAGnULPpiQHSK6pHomZX3RO1xFoXci7bZr
+GKPE7j4GuwvsEqwWpVCz7UZDh3L9dYw4
 -----END CERTIFICATE-----
 EOF
 
 cat << EOF > /etc/openvpn/server/server.key
 -----BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGsBTAYdn1OZbN
-6+ywDM3Y9oPO6pKNdEEA4yu0fj3t1v4FeFUfjwSCEDR3e1x++HYYOqyOa1dYIPl4
-fINIu8rDf6GXUdsIcBgfaCf/7eZHKeq4lw6qfa3itkJfik3abLs7Ydtxch2ZPiM4
-sRxo3noZEIdg9BsYzlZfN2xLlPoTKmRgnHcsL0I2TJ+fp0Ce59NBmKLZn9CmMlMs
-UtMrU1xschAX/skfJa+o+xBF1s2D9NBMIuRapL7IaXaZK3/tnP0yIDPrhy6/S/LW
-+BI2adA+xkOPU+/K/+VmlkmfpXZLbNJNRCPNLVgJEhZDOOdknQQfA8O7iFp9bJOT
-oDTC0AkBAgMBAAECggEBAIQ30NdlRoHl3PETuuI84w8qnPQpLXVsk4Vfp0npaJTJ
-qSlCtoLVzY4v8npAYYEtHolpIkN0Mx+2cc04LrVMItaOLJ5iHnwy/BqKWXP6gG+C
-+Wv1OhFCqWBhITIq+zwLd11A9aM86W186DtlwR4YTvA3C5/9UbrkNJ4QZ8S0UuZE
-9TErSjKc2uCmAqADjDI2NnTArDazwZoeK29mtSmhjv3JtscC+enp2ByPKA9XsQN/
-FfwwgosIREulcUWOCf8UlfzAsfV5HwT1ILKkyYKWUwU4wpsbr9v1c5mWsDbVSp6Z
-D/Dh2vhwICY3+ciTijXntJvrvF6ke6wd4M2N+uKnAAECgYEA/vvLY3BsC8+uY3TF
-eSc8/DXZuJKOJW954R9MM/hdDwh5mBf6D5QY9+jtLqj7BO4FzpQBanfJZTnu22hA
-CDZIxKxTTKK3XqXqlopN623/ki0y9rCfxh3xxYLSEzEIBZWf0c/9Awfm5jcDXZir
-ZTptiE+0eeTXyvTK+E/KO2T6zwECgYEAx3rWgS9b6o1mx7Io3+xM/MixUI8m8I/f
-4eY5hdDA892vg4Y99onUhM732ofYeIY/oKh6hNSWjtstWjR4Izq053xwkKeg5bw8
-NLDADqY6u8IxCdYAtoKAi0q2O0iRpRgcy3XrCouXNisLjTOwvDjHVgh1HNZhI3Pp
-uyFf6knvOgECgYAlSc1EjXw/fe+Su9DlFsfkWjusskH3V4YLVfhe4UM6n5Kom1kG
-TjIYjwegezW6UtSmkR5j44CgPQihLW2vxcB+gnTsEB+gx8K2oSMj+sIVLmb1jH7R
-CjABIlB2XgU+S9NDa5ckilNJ92GWnmzyMMkz1fQen0ivdXz5MzHv3aSQAQKBgFQo
-RdEQquWkrET5q/b0mXJYNT54doQtHtYOLByBerYnw8FoZEHb2lYBf12pzDDk6nkc
-OzxI+A/i9hpFYp3ySZoTzOWqYt4pcPkFzLEhfkvyXH/60igtnI+ngIQ4VIHjT1qj
-L/st8yh+Noxmz1xJVAe+37G/3BF5+JTjOrT8ZjoBAoGATqRvYC/UfcffIsTVIKXs
-XCvjCIctnaZuZsaPLzEJzDN9YCKWrindJSQfNfnns/eLggoPmW6qrqBunfJwDqI7
-DZMzuxlvig/40UJFSRIbAh1GjC4JOLZ3zv+jFeJuC3SnqH+O+yGbHrP0ZLTIjMlm
-NVBa6XU9xmGYwGz4Q25qH3Q=
+MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAM41I9hdn7aby2qJ
+4ZCvQt9f+L2tp3iayiDwPVvWye9MSpmWwzj9WbTXZe3Up/qrA+K+iC/K/JDdsLe8
+I8uDrDbiAVdpZLjhnlHwpp0T2ZJrTQSmEGSjP2v//jKskWPCcSS+nnZPh8w6A6Ge
+SD8RkjM7GRac0F0W7sFCZ5lHZmdnAgMBAAECgYAFNrC+UresDUpaWjwaxWOidDG8
+0fwu/3Lm3Ewg21BlvX8RXQ94jGdNPDj2h27r1pEVlY2p767tFr3WF2qsRZsACJpI
+qO1BaSbmhek6H++Fw3M4Y/YY+JD+t1eEBjJMa+DR5i8Vx3AE8XOdTXmkl/xK4jaB
+EmLYA7POyK+xaDCeEQJBAPJadiYd3k9OeOaOMIX+StCs9OIMniRz+090AJZK4CMd
+jiOJv0mbRy945D/TkcqoFhhScrke9qhgZbgFj11VbDkCQQDZ0aKBPiZdvDMjx8WE
+y7jaltEDINTCxzmjEBZSeqNr14/2PG0X4GkBL6AAOLjEYgXiIvwfpoYE6IIWl3re
+ebCfAkAHxPimrixzVGux0HsjwIw7dl//YzIqrwEugeSG7O2Ukpz87KySOoUks3Z1
+yV2SJqNWskX1Q1Xa/gQkyyDWeCeZAkAbyDBI+ctc8082hhl8WZunTcs08fARM+X3
+FWszc+76J1F2X7iubfIWs6Ndw95VNgd4E2xDATNg1uMYzJNgYvcTAkBoE8o3rKkp
+em2n0WtGh6uXI9IC29tTQGr3jtxLckN/l9KsJ4gabbeKNoes74zdena1tRdfGqUG
+JQbf7qSE3mg2
 -----END PRIVATE KEY-----
 EOF
 
