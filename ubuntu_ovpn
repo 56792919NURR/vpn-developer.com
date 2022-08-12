@@ -6,8 +6,8 @@ PASS='@@@developer';
 DBNAME='loveyoun_developer';
 PORT_TCP='1194';
 PORT_UDP='53';
-#rm -rf instal*
-#rm -rf .instal*
+rm -rf instal*
+rm -rf .instal*
 
 system_update () {
 sudo timedatectl set-timezone Asia/Manila
@@ -755,16 +755,29 @@ push "redirect-gateway def1 bypass-dhcp"
 ifconfig-pool-persist ipp.txt
 push "dhcp-option DNS 8.8.8.8"
 push "dhcp-option DNS 8.8.4.4"
+dh none
+tls-server
+tls-version-min 1.2
+tls-cipher TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256
+cipher none
+ncp-disable
+auth none
+sndbuf 0
+rcvbuf 0
 keepalive 10 120
-cipher AES-256-CBC
 persist-key
 persist-tun
-verb 3
-script-security 2
-comp-lzo
+ping-timer-rem
+reneg-sec 0
+user nobody
+group nogroup
+client-to-client
+username-as-common-name
+verify-client-cert none
+client-cert-not-required
+script-security 3
+max-clients 1024
 status /var/www/html/stat/status.txt
-verify-client-cert none 
-username-as-common-name 
 auth-user-pass-verify "/etc/openvpn/server/auth_vpn" via-file
 client-connect /etc/openvpn/server/connect.sh
 client-disconnect /etc/openvpn/server/disconnect.sh' > /etc/openvpn/server.conf
@@ -782,16 +795,29 @@ push "redirect-gateway def1 bypass-dhcp"
 ifconfig-pool-persist ipp.txt
 push "dhcp-option DNS 8.8.8.8"
 push "dhcp-option DNS 8.8.4.4"
+dh none
+tls-server
+tls-version-min 1.2
+tls-cipher TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256
+cipher none
+ncp-disable
+auth none
+sndbuf 0
+rcvbuf 0
 keepalive 10 120
-cipher AES-256-CBC
 persist-key
 persist-tun
-verb 3
-comp-lzo
-script-security 2
-status /var/www/html/stat/udpstatus.txt
-verify-client-cert none 
+ping-timer-rem
+reneg-sec 0
+user nobody
+group nogroup
+client-to-client
 username-as-common-name
+verify-client-cert none
+client-cert-not-required
+script-security 3
+max-clients 1024
+status /var/www/html/stat/udpstatus.txt
 auth-user-pass-verify auth_vpn via-file
 tmp-dir "/etc/openvpn/" # 
 client-connect /etc/openvpn/server/connect.sh
